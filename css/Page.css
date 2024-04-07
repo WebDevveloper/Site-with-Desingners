@@ -1,0 +1,474 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: rgb(254, 235, 201);
+}
+
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Стиль верхушки бара */
+.navbar {
+    overflow: hidden;
+    background-color: rgb(253, 202, 162);
+}
+
+/* Стиль ссылок */
+.navbar a {
+    display: block;
+    float: left;
+    color: darkred;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Ссылка справа */
+.navbar a.right {
+    float: right;
+}
+
+/* Изменение цвета hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Стиль header */
+.header {
+    padding: 40px;
+    text-align: center;
+    background-image: url(../img/General/salyut.jpg);
+    color: white;
+    
+}
+
+.Log img{
+   
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+
+.Korzina img {
+    float: right ;
+  
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+
+/* ----------------------------------- */
+.header h1 {
+    font-size: 80px;
+}
+
+.wrapper {
+    height: 50%;
+    padding: 10px;
+   
+}
+
+
+
+.menu {
+    background: linear-gradient(to bottom, #fff, #f1f2f2); /* Градиент */
+    border: 1px solid #999; /* Параметры рамки */
+    display: inline-flex;
+    padding: 0 5px; /* Поля */
+    font: 14px Arial, sans-serif; /* Параметры шрифта */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Тень под меню */
+   }
+
+.menu_list, .menu_list ul { 
+    list-style: none;
+    margin: 0; padding: 0;
+}
+
+.menu_list a {
+    text-decoration: none;
+    display: block;
+    color: #4c4c4c;
+}
+
+.menu_list > li {
+    list-style: none;
+    position: relative;
+    display: inline-block; /* Выстраиваем по горизонтали */
+    border-right: 1px solid #fff; /* Белая линия справа */
+}
+.menu_list > li > a {
+    padding: 10px 15px; /* Поля */
+    border-right: 1px solid #d8d8d8; /* Серая линия справа */
+    position: relative; /* Относительное позиционирование */
+    z-index: 3; /* Выводим поверх остальных элементов */
+}
+
+
+.menu_list ul {
+    position: absolute; /* Абсолютное позиционирование */
+    display: none; /* Прячем подменю */
+    width: 200px; /* Ширина подменю */
+    background: #fff; /* Цвет фона */
+    box-shadow: 0 0 10px #666; /* Параметры тени */
+}
+
+.menu_list ul a {
+    padding: 5px 10px; /* Поля */
+}
+
+.menu_list ul a:hover {
+    background: #008df2; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+}
+
+/*------------------------------------------------------------------------*/
+.pod_katalog  a:hover {
+    position: relative;
+    display: block;
+}
+
+
+/*------------------------------------------------------------------------*/
+
+
+.sub-sub-menu_list > li {
+    display: block;
+    top: 20px;
+    position: absolute;
+}
+
+.menu > li:hover::before {
+    content: ''; /* Создаём пустой псевдоэлемент */
+    top: 0; left: 0; right: 0; bottom: 0; /* Размер совпадает с пунктом меню */
+    box-shadow: 0 5px 10px #666; /* Параметры тени */
+    position: absolute; /* Абсолютное позиционирование */
+}
+
+.menu_list {
+    display: flex;
+}
+
+.menu_list li {
+    margin: 0px 10px 0px 0px;
+}
+
+.menu_list>li:hover .sub-menu_list{
+    display: block;
+}
+
+
+.sub-menu_list {
+    display: none;
+    min-width: 300px;
+    position: absolute;
+    left: 0;
+    top: 35px
+    
+}
+
+.sub-menu_list>li:hover .pod_catalog{
+    display: block;
+    left: 290px;
+    position: absolute;
+    padding:  10px;
+    top: 0;
+}
+
+
+.banner img {
+    width: 100%;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.rules img {
+    width: 100%;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+/* MAIN ----------------------------- */
+.main {
+    background-color: lightgrey;
+    margin: 15%;
+    padding: 1%;
+
+}
+
+
+.Malaya-piro img {
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    
+}
+
+.Malaya-piro_2 img {
+    
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    
+}
+
+.Malaya-piro_3 img {
+   
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+
+.Malaya-piro_4 img {
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+
+.main h1 {
+    text-align: center;
+}
+
+
+.Sr-piro img {
+    
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+
+.Sr-piro_2 img {
+    
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+
+.Sr-piro_3 img {
+    
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+
+.Sr-piro_4 img {
+    
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+
+.Big-piro img {
+    
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+
+.Big-piro_2 img {
+    
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+
+.Super-piro img {
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+
+.shary img {
+   
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+
+.svechi img {
+   
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+
+.svechi_2 img {
+   
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+
+.fakel img {
+   
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+
+.fontan img {
+   
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+
+.ploshad {
+    background-image: url(../img/General/salut_2.jpg);
+    width: 1200px ;
+    height: 600px;
+    margin: 3%;
+    padding: 10%;
+    color: white;
+    
+}
+
+.salut_ploshad img {
+    padding: 20px;
+    width: 100%;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+
+.slova {
+    text-align: center;
+    padding: 50px;
+}
+
+
+
+.SAL img{
+    
+    float: right;
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+   
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width:100%;
+    }
+}
+.footer{
+background:rgb(197, 224, 76);
+padding:30px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+}
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:black;
+font-size:0.8em;
+}
+.topNubex img {
+    position: fixed;
+    right: 45px;
+    bottom: 45px;
+    color: black;
+    
+    width: 2.97%;
+    height: 5.59%;
+    border-radius: 5px;
+}
+
+.downNubex img  {
+    position: fixed;
+    left: 45px;
+    bottom: 45px;
+    color: black;
+    
+    flex-flow: row nowrap;
+    align-items: stretch;
+    width: 2.97%;
+    height: 5.59%;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 400px) {
+    .downNubex img {
+        width: 100;
+   
+    }
+}
